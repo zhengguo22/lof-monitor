@@ -1,0 +1,21 @@
+[project]
+name = "dgjy1988"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "akshare>=1.18.84",
+    "beautifulsoup4>=4.15.0",
+    "lxml>=6.1.1",
+    "pandas>=3.0.5",
+    "requests>=2.34.2",
+    "streamlit>=1.61.1",
+    "tabulate>=0.10.0",
+]
+
+[project.scripts]
+dgjy1988 = "dgjy1988:main"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
