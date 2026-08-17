@@ -18,8 +18,7 @@ st.set_page_config(page_title="LOF 基金实时监控", layout="wide")
 
 # 缓存目录
 CACHE_DIR = ".lof_cache"
-if not os.path.exists(CACHE_DIR):
-    os.makedirs(CACHE_DIR)
+os.makedirs(CACHE_DIR, exist_ok=True)
 
 @st.cache_data(ttl=3*24*3600)
 def get_fund_holdings(code):
